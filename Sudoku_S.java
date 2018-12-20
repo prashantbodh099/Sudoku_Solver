@@ -1,8 +1,8 @@
 public class Sudoku_S {
-	boolean valid(int num,int[][] prob,int r,int c){
+	boolean valid(int num,int[][] prob,int r,int c){ // It is to check whether the number is  valid or not
    		int k;
-    	int startr = (r - r%3);
-   	 	int startc = (c - c%3);
+    	int startr = (r - r%3);	// to obtain that 3x3 box
+   	int startc = (c - c%3);
     	for(k = 0;k < 9;k++){
         	if(prob[r][k] == num) {
             	return false;
